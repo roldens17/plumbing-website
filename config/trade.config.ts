@@ -27,15 +27,17 @@ export const tradeConfig = {
   hero: {
     eyebrow: "Elite Plumbing Services",
     headline: "We deliver elite plumbing services for homes & businesses.",
-    description:
-      "At Donel & D we install, repair, and maintain pipes, valves, fittings, drainage systems, and fixtures in commercial and residential structures. We collaborate with general contractors, electricians, and other construction professionals, follow building plans and blueprints, and respond to diagnose and resolve plumbing emergencies.",
+    descriptionMain:
+      "We provide fast, licensed plumbing repairs and installations for homes and businesses in Naples, FL.",
+    descriptionSecondary:
+      "From leaks and clogs to water heaters and fixture upgrades, we handle residential and light commercial plumbing with clear communication and clean workmanship.",
     badges: [
       "Licensed & Insured",
       "Fast Response Times",
       "Upfront Pricing",
       "Satisfaction Guaranteed",
     ],
-    primaryCtaLabel: "Get A Quote",
+    primaryCtaLabel: "Call Now",
     secondaryCtaLabel: "View Services",
   },
   heroCard: {
@@ -44,6 +46,8 @@ export const tradeConfig = {
     sameDayLabel: "Same-Day Service",
     sameDayNote: "When Available",
     directLineLabel: "Direct Line",
+    emergencyNote:
+      "For plumbing emergencies or urgent issues, tap to call now.",
   },
   stats: [
     { label: "Response", value: "Fast Scheduling" },

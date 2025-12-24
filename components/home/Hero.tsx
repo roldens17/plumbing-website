@@ -2,6 +2,24 @@ import { tradeConfig } from "@/config/trade.config";
 import Image from "next/image";
 
 export function Hero() {
+    const handlePrimaryClick = () => {
+        if (typeof window === "undefined") return;
+
+        const isMobile = window.matchMedia("(max-width: 639px)").matches;
+
+        if (isMobile) {
+            window.location.href = `tel:${tradeConfig.brand.phoneE164}`;
+            return;
+        }
+
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+            window.location.hash = "#contact";
+        }
+    };
+
     return (
         <section className="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-center">
             <div className="space-y-6">
@@ -11,16 +29,21 @@ export function Hero() {
                 <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
                     {tradeConfig.hero.headline}
                 </h1>
-                <p className="max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
-                    {tradeConfig.hero.description}
+                <p className="mt-2 text-sm font-medium text-slate-200">
+                    Licensed &amp; insured plumber serving {tradeConfig.brand.location}.
                 </p>
+                <div className="max-w-xl space-y-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+                    <p>{tradeConfig.hero.descriptionMain}</p>
+                    <p>{tradeConfig.hero.descriptionSecondary}</p>
+                </div>
                 <div className="flex flex-wrap items-center gap-3">
-                    <a
-                        href="#contact"
-                        className="rounded-full bg-sky-500 px-6 py-2.5 text-sm font-semibold uppercase tracking-wide text-slate-950 shadow-md shadow-sky-500/40 transition hover:bg-sky-400"
+                    <button
+                        type="button"
+                        onClick={handlePrimaryClick}
+                        className="inline-flex rounded-full bg-sky-500 px-6 py-2.5 text-sm font-semibold uppercase tracking-wide text-slate-950 shadow-md shadow-sky-500/40 transition hover:bg-sky-400"
                     >
                         {tradeConfig.hero.primaryCtaLabel}
-                    </a>
+                    </button>
                     <a
                         href="#services"
                         className="rounded-full border border-slate-600 px-6 py-2.5 text-sm font-semibold text-slate-100 transition hover:border-sky-400 hover:text-sky-300"
@@ -39,6 +62,9 @@ export function Hero() {
                         </span>
                     ))}
                 </div>
+                <p className="mt-3 max-w-xl text-xs text-slate-400 sm:text-sm">
+                    “{tradeConfig.testimonialsSection.items[0].quote}” — {tradeConfig.testimonialsSection.items[0].name}
+                </p>
             </div>
 
             <div className="space-y-4 rounded-3xl border border-slate-800 bg-slate-900/50 p-6 shadow-xl shadow-sky-950/40">
@@ -84,10 +110,13 @@ export function Hero() {
                             </p>
                             <a
                                 href={`tel:${tradeConfig.brand.phoneE164}`}
-                                className="text-sm font-semibold text-slate-50"
+                                className="block text-lg font-semibold text-slate-50 sm:text-xl"
                             >
                                 {tradeConfig.brand.phoneDisplay}
                             </a>
+                            <p className="mt-1 text-[11px] text-slate-400">
+                                {tradeConfig.heroCard.emergencyNote}
+                            </p>
                         </div>
                         <a
                             href={`mailto:${tradeConfig.brand.email}`}

@@ -101,6 +101,18 @@ export function ContactForm() {
                     <p className="mt-2 text-xs text-slate-300">
                         {tradeConfig.whySection.aside.description}
                     </p>
+                    <p className="mt-3 text-[11px] text-slate-400">
+                        For active leaks, burst pipes, or other emergencies, please call us directly at
+                        {" "}
+                        <a
+                            href={`tel:${tradeConfig.brand.phoneE164}`}
+                            className="font-semibold text-sky-300"
+                        >
+                            {tradeConfig.brand.phoneDisplay}
+                        </a>
+                        {" "}
+                        for the fastest help. For non-urgent requests, use this form.
+                    </p>
                 </div>
                 <div className="hidden rounded-2xl border border-slate-800 bg-slate-900/60 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-slate-300 sm:block">
                     {tradeConfig.whySection.aside.badge}
@@ -142,7 +154,7 @@ export function ContactForm() {
                     </div>
                     <div className="space-y-1">
                         <label className="block text-[11px] text-slate-300">
-                            Phone
+                            Phone (preferred for fastest response)
                         </label>
                         <input
                             type="tel"

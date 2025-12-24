@@ -39,7 +39,7 @@ export function ChatWidget() {
             {
                 id: "welcome",
                 role: "assistant",
-                content: `Hello, how can ${tradeConfig.brand.shortName} ${tradeConfig.trade} help you?`,
+                content: `Hello, how can ${tradeConfig.brand.shortName} ${tradeConfig.trade} help you? For active leaks, burst pipes, or other emergencies, please call us at ${tradeConfig.brand.phoneDisplay} for the fastest help.`,
                 parts: [],
             },
         ]);
@@ -95,7 +95,7 @@ export function ChatWidget() {
                                 </div>
                                 <div className="rounded-2xl bg-slate-900 px-4 py-3 text-sm text-slate-100">
                                     👋 Hi! I&apos;m here to help with your {tradeConfig.trade}{" "}
-                                    question. Ask me anything and we&apos;ll get you sorted.
+                                    question. Ask me anything and we&apos;ll get you sorted. For active leaks, burst pipes, or other emergencies, please call us at {tradeConfig.brand.phoneDisplay} for the fastest help.
                                 </div>
                             </div>
 
@@ -123,7 +123,7 @@ export function ChatWidget() {
                                 href={`tel:${tradeConfig.brand.phoneE164}`}
                                 className="inline-flex items-center justify-center gap-2 rounded-full bg-sky-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-950 shadow-sm transition hover:bg-sky-400"
                             >
-                                Call now
+                                Call Now
                             </a>
 
                             <div className="max-h-64 space-y-3 overflow-y-auto pr-1 text-sm">

@@ -13,20 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Donel & D Plumbing | Elite Plumbing Services in Naples, FL",
+  title: "Donel & D Plumbing | Elite Plumbing Services in Naples, Marco Island & Bonita Springs, FL",
   description:
-    "Donel & D Plumbing provides expert residential and commercial plumbing services in Naples, Florida including repairs, installations, water heaters, and emergency service.",
+    "Donel & D Plumbing provides expert residential and commercial plumbing services in Naples, Marco Island, and Bonita Springs, Florida including repairs, installations, water heaters, and emergency service.",
   openGraph: {
-    title: "Donel & D Plumbing | Elite Plumbing Services in Naples, FL",
+    title: "Donel & D Plumbing | Elite Plumbing Services in Naples, Marco Island & Bonita Springs, FL",
     description:
-      "Donel & D Plumbing provides expert residential and commercial plumbing services in Naples, Florida including repairs, installations, water heaters, and emergency service.",
+      "Donel & D Plumbing provides expert residential and commercial plumbing services in Naples, Marco Island, and Bonita Springs, Florida including repairs, installations, water heaters, and emergency service.",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Donel & D Plumbing | Elite Plumbing Services in Naples, FL",
+    title: "Donel & D Plumbing | Elite Plumbing Services in Naples, Marco Island & Bonita Springs, FL",
     description:
-      "Donel & D Plumbing provides expert residential and commercial plumbing services in Naples, Florida including repairs, installations, water heaters, and emergency service.",
+      "Donel & D Plumbing provides expert residential and commercial plumbing services in Naples, Marco Island, and Bonita Springs, Florida including repairs, installations, water heaters, and emergency service.",
   },
 };
 
@@ -40,8 +40,8 @@ export default function RootLayout({
     "@type": "Plumber",
     name: "Donel & D Plumbing",
     description:
-      "Residential and commercial plumbing services in Naples, Florida.",
-    areaServed: "Naples, FL",
+      "Residential and commercial plumbing services in Naples, Marco Island, and Bonita Springs, Florida.",
+    areaServed: "Naples, Marco Island, Bonita Springs, FL",
     telephone: "+1-239-398-0838",
     email: "doneldestine5@gmail.com",
   };

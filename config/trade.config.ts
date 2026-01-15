@@ -182,7 +182,7 @@ export const tradeConfig = {
     licenseNote:
       "Licensed and insured plumbing contractor. Serving homeowners and businesses throughout Naples, Marco Island, and Bonita Springs, FL.",
     mapTitle: "Service map",
-    mapQuery: "Naples,+FL",
+    mapQuery: "Naples,+Marco+Island,+Bonita+Springs,+FL",
     footerLinks: [
       { label: "Services", href: "#services" },
       { label: "Projects", href: "#projects" },

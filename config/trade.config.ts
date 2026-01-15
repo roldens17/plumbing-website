@@ -28,7 +28,7 @@ export const tradeConfig = {
     eyebrow: "Elite Plumbing Services",
     headline: "We deliver elite plumbing services for homes & businesses.",
     descriptionMain:
-      "We provide fast, licensed plumbing repairs and installations for homes and businesses in Naples, FL.",
+      "We provide fast, licensed plumbing repairs and installations for homes and businesses in Naples, Marco Island, and Bonita Springs, FL.",
     descriptionSecondary:
       "From leaks and clogs to water heaters and fixture upgrades, we handle residential and light commercial plumbing with clear communication and clean workmanship.",
     badges: [
@@ -51,7 +51,7 @@ export const tradeConfig = {
   },
   stats: [
     { label: "Response", value: "Fast Scheduling" },
-    { label: "Service Area", value: "Naples, FL" },
+    { label: "Service Area", value: "Naples, Marco Island & Bonita Springs" },
     { label: "Licensed", value: "& Insured" },
   ],
   servicesSection: {
@@ -124,7 +124,7 @@ export const tradeConfig = {
       {
         icon: "N",
         title: "Local & Family-Owned",
-        description: "Proudly serving Naples with honest, neighborly service.",
+        description: "Proudly serving Naples, Marco Island, and Bonita Springs with honest, neighborly service.",
       },
     ],
     aside: {
@@ -180,7 +180,7 @@ export const tradeConfig = {
     hoursLine1: "Monday – Saturday: 8:00 AM – 6:00 PM",
     hoursLine2: "Emergency service available after hours.",
     licenseNote:
-      "Licensed and insured plumbing contractor. Serving homeowners and businesses throughout Naples, FL.",
+      "Licensed and insured plumbing contractor. Serving homeowners and businesses throughout Naples, Marco Island, and Bonita Springs, FL.",
     mapTitle: "Service map",
     mapQuery: "Naples,+FL",
     footerLinks: [

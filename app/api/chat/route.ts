@@ -3,6 +3,13 @@ import { streamText } from "ai";
 export const runtime = "edge";
 
 export async function POST(req: Request) {
+  if (!process.env.AI_GATEWAY_API_KEY) {
+    return new Response(
+      "Missing AI_GATEWAY_API_KEY. Set it in plumbing-website/.env.local for local development.",
+      { status: 500 },
+    );
+  }
+
   const { messages } = await req.json();
 
   const coreMessages = Array.isArray(messages)
